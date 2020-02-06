@@ -1,0 +1,76 @@
+@/* レスポンシブ */
+@media (max-width: 1024px){
+  body {
+   
+  }
+}
+
+@media (max-width: 1024px){
+  .body {
+    font-size: 1.3rem;
+  }
+  .site-title-sub::before,
+  .site-title-sub::after {
+    display: block;
+    width: 80%;
+    margin: 10px auto;
+  }
+  .site-title-sub {
+    font-size: 1.7rem;
+  }
+  .site-title {
+    margin-top: 35px;
+    font-size: 5rem;
+  }
+  .header {
+    padding-top: 60px;
+  }
+  .button:hover {
+    opacity: 1;
+  }
+  .heading {
+    font-size: 2.5rem;
+  }
+
+
+  .heading::before,
+  .heading::after {
+    width: 8px;
+    height: 8px;
+    margin: 0 12px;
+    vertical-align: 5px;
+  }
+
+
+
+  .about-text {
+    line-height: 1.8;
+  }
+  .work-wrapper,
+  .work-box {
+    display: block;
+  }
+  .work-image {
+    display: none;
+  }
+  .work-description {
+    position: relative;
+  }
+  .work-box::after {
+    top: 0;
+    height: 100%;
+    background-size: cover;
+    transform: none;
+  }
+  
+  .contact-form {
+    width: 80%;
+  }
+  .contact {
+    padding-bottom: 80px;
+  }
+
+}
+
+
+

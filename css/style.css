@@ -1,0 +1,522 @@
+@charset "UTF-8";
+
+html {
+  font-size: 62.5%;
+}
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+body {
+  width: 100%;
+  height: 100%;
+  color: #fff;
+  font-size: 1.4rem;
+  font-family: 'Raleway', "Hiragino Kaku Gothic ProN", Meiryo, sans-serif;
+}
+
+/*
+#body-1 {
+  background: #151515 url("../images/r.png") no-repeat fixed left bottom;
+  background-size: cover;
+}
+*/
+
+
+
+/* 見出し */
+.heading {
+  display: inline-block;
+  margin: 30px 0 15px;
+  padding: 0 40px 15px;
+  letter-spacing: 10px;
+  font-size: 4rem;
+}
+.heading::after {
+  content: "";
+  display: block;
+  width: 0;
+  margin: 6px auto 0;
+  border-bottom: 3px solid #7C5119;
+  transition: width 0.3s ease-in-out;
+}
+.heading:hover::after {
+  width: 100%;
+}
+
+
+
+/*
+.heading::before,
+.heading::after {
+  content: "";
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  border-bottom: 1px solid #999;
+}
+.heading::before {
+  bottom: 5px;
+}
+*/
+
+
+/* メニュー */
+nav {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  width: 100%;
+  padding: 100px;
+  background-color: black;
+ display: none;
+}
+.rogo-menu {
+  width: 27px;
+  height: 27px;
+  display: inline-block;
+  margin-right: 5px;
+}
+.m-heading {
+  display: inline-block;
+  margin: 30px 0 15px;
+  padding: 0 60px 15px;
+  letter-spacing: 10px;
+  font-size: 7rem;
+}
+.m-heading::after {
+  content: "";
+  display: block;
+  width: 0;
+  margin: 6px auto 0;
+  border-bottom: 3px solid #7C5119;
+  transition: width 0.3s ease-in-out;
+}
+.m-heading:hover::after {
+  width: 100%;
+}
+
+nav .list {
+  list-style: none;
+}
+.list li a {
+  display: inline-block;
+  font-size: 4rem;
+  letter-spacing: 5px;
+  font-weight: bold;
+  color: white;
+  opacity: 0.7;
+  text-decoration: none;
+  padding: 30px 100px 20px;
+}
+.list li a:hover {
+  opacity: 1.0;
+}
+
+.close-btn1 {
+  position: absolute;
+  top: 50px;
+  right: 50px;
+  font-size: 2rem;
+  padding: 8px 11px;
+  border: 4px solid #fff;
+  border-radius: 10px;
+  background-color: rgba(255, 255, 255, 0.15);
+  text-decoration: none;
+  color: #fff;
+  opacity: 0.5;
+}
+.close-btn1:hover,
+.close-btn2:hover {
+  opacity: 1.0;
+}
+
+
+/* コンタクト */
+
+.contact {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  width: 100%;
+  padding: 100px;
+  background-color: black;
+  display: none;
+}
+
+
+.close-btn2 {
+  position: absolute;
+  top: 50px;
+  right: 50px;
+  font-size: 2rem;
+  padding: 8px 11px;
+  border: 4px solid #fff;
+  border-radius: 10px;
+  background-color: rgba(255, 255, 255, 0.15);
+  text-decoration: none;
+  color: #fff;
+  opacity: 0.5;
+}
+
+.contact-form {
+  width: 50%;
+  margin: 50px auto 0;
+}
+.contact-form input[type=text],
+.contact-form textarea {
+  display: block;
+  width: 100%;
+  margin-bottom: 10px;
+  padding: 15px;
+  outline: none;
+  border: 1px solid rgba(255,255,255,0.4);
+  border-radius: 0;
+  background-color: rgba(255,255,255,0.05);
+  color: #fff;
+}
+.contact-form input[type=text]:focus,
+.contact-form textarea:focus {
+  box-shadow: 0 0 8px rgba(255, 255, 255, 0.5) inset;
+}
+.contact-form textarea {
+  height: 150px;
+}
+.contact-form input[type=submit] {
+  display: block;
+  width: 200px;
+  margin: 40px auto 0;
+  padding: 15px;
+  border: 1px solid rgba(255, 255, 255, 0.4);
+  border-radius: 5px;
+  background-color: transparent;
+  color: rgba(255, 255, 255, 0.6);
+  cursor: pointer;
+}
+.contact-form input[type=submit]:hover {
+  background-color: rgba(255, 255, 255,0.05);
+}
+
+
+/* ヘッダー */
+
+.header {
+  background: #222222 url("../images/g.png") no-repeat fixed left bottom;
+  background-size: cover;
+  padding: 400px 60px 170px;
+  transition: background 3S;
+}
+.rogo-top {
+  width: 42px;
+  height: 42px;
+}
+
+
+.header:hover {
+  background: #222222 url("../images/r.png") no-repeat fixed left bottom;
+  background-size: cover;
+  transition: background 6s;
+}
+
+.site-title {
+  margin: 50px 0 40px;
+  text-align: left;
+  color: white;
+  font-size: 7.6rem;
+}
+.site-description {
+  margin-bottom: 50px;
+  text-align: left;
+  color: #fff;
+  font-size: 2.0rem;
+}
+.button {
+  display: inline-block;
+  width: 200px;
+  padding: 20px;
+  border-radius: 50%;
+  background-color: black;
+  opacity: 0.5;
+  color: #fff;
+  text-decoration: none;
+  text-align: center;
+  letter-spacing: 1px;
+  font-size: 1.5rem;
+}
+.button:hover {
+  opacity: 1;
+}
+.buttons .button {
+  margin: 10px;
+}
+
+
+
+
+/* フッター */
+.footer {
+  background-color: #383634;
+  padding: 12px 0;
+  font-size: 1.3rem;
+  text-align: center;
+}
+
+
+/* about */
+
+.about {
+  padding: 80px 30px;
+  background-color: #C0C0C0;
+  color: #333;
+}
+
+/* about見出し */
+
+.about-heading {
+  position: absolute;
+  top: 120px;
+  right: 200px;
+  display: inline-block;
+  letter-spacing: 10px;
+  font-size: 7rem;
+}
+.about-heading::after {
+  content: "";
+  display: block;
+  width: 0;
+  margin: 6px auto 0;
+  border-bottom: 3px solid #7C5119;
+  transition: width 0.3s ease-in-out;
+}
+
+
+.about-heading:hover::after {
+  width: 100%;
+}
+
+.about-text{
+  margin-top: 200px;
+  padding-left: 40px;
+  letter-spacing: 5px;
+  line-height: 2.0;
+  font-size: 2rem;
+  font-weight: bold;
+}
+.about-text .text0  {
+  opacity: 0;
+}
+.about-text .text1  {
+  opacity: 0;
+}
+.about-text .text2  {
+  opacity: 0;
+}
+.about-text .text3  {
+  opacity: 0;
+}
+.about-text .text4  {
+  opacity: 0;
+}
+.about-text .text5  {
+  opacity: 0;
+}
+.about-text .text6  {
+  opacity: 0;
+}
+.about-text .text7  {
+  opacity: 0;
+}
+.about-text .text8  {
+  opacity: 0;
+}
+.about-text .text9  {
+  opacity: 0;
+}
+
+/*
+.about-text .a-text {
+  opacity: 1.0;
+}
+*/
+
+
+
+.purof {
+  height: 500px;
+  position: relative; 
+  padding: 30px 0;
+  background-color: #C0C0C0;
+  color: #333;
+}
+.heading-purof {
+  position: absolute;
+  top: 50px;
+  left: 820px;
+  letter-spacing: 1px;
+  font-size: 2.0rem;
+ }
+
+.heading-text {
+  position: absolute;
+  top: 85px;
+  left: 820px;
+  letter-spacing: 2px;
+  font-size: 1.2;
+}
+.purof-contents {
+
+}
+.purof-image {
+  position: absolute;
+  top: 120px;
+  left: 650px;
+  right: 660px;
+  width: 140px;
+  height: 140px;
+  margin-top: 15px;
+}
+.purof-text {
+  position: absolute;
+  top: 130px;
+  left: 820px;
+  right: 100px;
+  letter-spacing: 2px;
+}
+.a-footer {
+  position: relative;
+  height: 300px;
+  padding-top: 30px; 
+  background-color: #383634;
+  font-size: 1.3rem;
+  text-align: center;
+}
+.a-footer .f-list {
+  position: absolute;
+  top: 10px;
+  right: 90px;
+  list-style: none;
+ }
+.f-list li a {
+  display: inline-block;
+  font-size: 2.5rem;
+  letter-spacing: 5px;
+  font-weight: bold;
+  color: white;
+  opacity: 0.7;
+  text-decoration: none;
+  padding: 30px 20px 10px;
+}
+.f-list li a:hover {
+  opacity: 1.0;
+}
+.footer-text{
+  position: relative;
+}
+.a-footer-copy {
+  margin-top: 220px;
+}
+
+
+/* work */
+
+.works {
+  background-color: #383634;
+  padding: 80px 0;
+}
+.works-wrapper {
+  display: table;
+  width: 100%;
+  margin-top: 60px;
+  table-layout: fixed;
+}
+.work-box {
+  display: table-cell;
+}
+.work-image {
+  display: block;
+  width: 100%;
+}
+.work-description {
+  z-index: 1;
+  width: 100%;
+  height: 50%;
+  overflow: auto;
+}
+.work-description-inner {
+  display: table;
+  width: 100%;
+  height: 100%;
+  padding: 20px;
+}
+.work-text {
+  font-size: 1.2rem;
+  text-align: center;
+  line-height: 2;
+}
+.work-text .button {
+  width: 60%;
+  margin-top: 20px;
+  padding: 3px;
+}
+.button-ghost {
+  border: 4px solid #fff;
+  background-color: rgba(255, 255, 255, 0.15);
+}
+
+
+.past-industries {
+  background-color: black;
+  padding: 80px 0;
+}
+.past-wrapper {
+  display: table;
+  width: 100%;
+  margin-top: 60px;
+  table-layout: fixed;
+}
+.past-box {
+  display: table-cell;
+}
+.past-description {
+  z-index: 1;
+  width: 100%;
+  height: 50%;
+  overflow: auto;
+}
+.past-description-inner {
+  display: table;
+  width: 100%;
+  height: 100%;
+  padding: 20px;
+}
+.past-image {
+  display: block;
+  width: 100%;
+  height: 200px;
+}
+.past-text {
+  font-size: 1.2rem;
+  text-align: center;
+  line-height: 2;
+}
+.past-text .button {
+  width: 60%;
+  margin-top: 20px;
+  padding: 3px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
