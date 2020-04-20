@@ -433,9 +433,44 @@ nav .list {
 .work-box {
   display: table-cell;
 }
-.work-image {
+.work-heading {
+  display: inline-block;
+  margin: 100px 0 15px 100px;
+  padding: 0 40px 15px;
+  letter-spacing: 10px;
+  font-size: 3rem;
+}
+.work-heading::after {
+  content: "";
   display: block;
+  width: 0;
+  margin: 6px auto 0;
+  border-bottom: 3px solid #7C5119;
+  transition: width 0.3s ease-in-out;
+}
+.work-heading:hover::after {
   width: 100%;
+}
+
+.work-image-app {
+  display: block;
+  margin: 0 auto 0px;
+  width: 75%;
+}
+.work-image-logo1 {
+  display: block;
+  margin: 0 auto 0px;
+  width: 75%;
+}
+.work-image-logo2 {
+  display: block;
+  margin: 0 auto -40px;
+  width: 100%;
+}
+.work-image-logo3 {
+  display: block;
+  margin: 0 auto -40px;
+  width: 70%;
 }
 .work-description {
   z-index: 1;
@@ -455,7 +490,7 @@ nav .list {
   line-height: 2;
 }
 .work-text .button {
-  width: 60%;
+  width: 30%;
   margin-top: 20px;
   padding: 3px;
 }
