@@ -20,32 +20,95 @@
   }
   .site-title {
     margin-top: 35px;
-    font-size: 5rem;
+    font-size: 4rem;
   }
   .header {
     padding-top: 60px;
   }
+  .rogo-top {
+    width: 23px;
+    height: 23px;
+  }
+
   .button:hover {
     opacity: 1;
   }
+  .m-heading {
+    letter-spacing: 10px;
+    font-size: 3.5rem;
+  }
+  nav .list {
+    list-style: none;
+  }
+  .list li a {
+    display: inline-block;
+    font-size: 2.5rem;
+    padding: 30px 0px 20px;
+  }
+  .rogo-menu {
+    width: 15px;
+    height: 15px;
+  }
+
   .heading {
     font-size: 2.5rem;
   }
-
-
-  .heading::before,
-  .heading::after {
-    width: 8px;
-    height: 8px;
-    margin: 0 12px;
-    vertical-align: 5px;
+  .work-heading {
+    font-size: 2.0rem;
+    margin: 50px 0 15px 50px;
+    padding: 0 20px 15px;
   }
-
-
-
+  .about-heading {
+    font-size: 2.5rem;
+  }
   .about-text {
-    line-height: 1.8;
+    font-size: 1.2rem;
+    letter-spacing: 3px;
+    line-height: 2.0;
   }
+  .purof {
+  height: 500px;
+  position: relative; 
+  padding: 30px 0;
+  background-color: #C0C0C0;
+  color: #333;
+}
+.heading-purof {
+  position: absolute;
+  top: 0px;
+  left: 30px;
+  letter-spacing: 1px;
+  font-size: 2.0rem;
+ }
+
+.heading-text {
+  position: absolute;
+  top: 40px;
+  left: 30px;
+  letter-spacing: 2px;
+  font-size: 1.2;
+}
+.purof-contents {
+
+}
+.purof-image {
+  position: absolute;
+  top: 120px;
+  left: 30px;
+  right: 660px;
+  width: 140px;
+  height: 140px;
+  margin-top: 15px;
+}
+.purof-text {
+  position: absolute;
+  top: 120px;
+  left: 200px;
+  right: 100px;
+  letter-spacing: 2px;
+}
+
+
   .work-wrapper,
   .work-box {
     display: block;
@@ -72,5 +135,18 @@
 
 }
 
+@media (max-width: 600px){
+  .header {
+    background: #222222 url("../images/bg.png") no-repeat fixed left bottom;
+    background-size: cover;
+    transition: background 3S;
+  }
 
+  .header:hover {
+  background: #222222 url("../images/bgy.png") no-repeat fixed left bottom;
+  background-size: cover;
+  transition: background 6s;
+}
+
+}
 
